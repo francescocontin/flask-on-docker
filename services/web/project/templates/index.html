@@ -1,0 +1,10 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.js" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    var socket = io();
+    socket.on('connect', function() {
+        socket.emit('connected', {data: 'I\'m connected!'});
+    });
+</script>
+<div>
+	Bau
+</div>
